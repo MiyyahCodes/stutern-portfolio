@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+  --blue:#3898ff;
+  --black:#333;
+  --white:#fff;
+  --light-color:#666;
+  --border:.1rem solid var(--light-color);
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+html, body {
+  margin: 0;
+  padding:0;
+  font-family: 'Nunito',sans-serif;
+  transition: all .2s linear;
+  background: #f7f7f7;
+  height: 100%;
+  width: 100%;
+  scroll-padding-top: 6rem;
+font-size: 87.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+a{
+  text-decoration:none;
+}
+.nav {
+    height: 60px;
+    width: 100%;
+    background-color: var(--blue);
+    position: relative;
+  }
+
+  .nav > .nav-header {
+    display: inline;
+  }
+
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: var(--black);
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 50px;
+  }
+  .nav > .nav-btn {
+    display: none;
+  }
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  .nav > .nav-links > ul li a{
+    display: block;
+    padding: 0 8px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+
+  }
+  .nav > .nav-links > ul{
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    position: relative;
+padding-right: 50px;
+  }
+  .nav > .nav-links > ul li{
+    display: inline-block;
+  }
+  .nav > .nav-links > ul li:hover{
+      background-color: #285fe2;
+      border-radius: 5px;
+  }
+  .nav > #nav-check {
+    display: none;
+  }
+ .nav .nav-links ul a i{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 7px;
+    margin-left: 5px;
+ }
+#about-me,footer{
+  width: 60%;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 30px;
+  background-color: #f7f7f7;
+  margin: auto;
+  margin-top: 25px;
+  box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+main{
+  margin-top:10rem;
+}
+#about-me img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 50%;
+}
+#about-me h2 {
+  letter-spacing: 0.2em;
+  color: var(--blue);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#about-me ul {
+  list-style-type: circle;
+}
+#about p,
+#about li{
+    font-weight: 500;
+    word-wrap: break-word;
+    padding: 5px 25px;
+    line-height: 2;
+}
+footer button {
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-family: Montserrat;
+    border-radius: 50px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    transition: 0.5s ease;
+    padding: 50px;
+    font-size: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0;
+}
+footer button:hover {
+    background-color: #acc8e5;
+    color: var(--blue);
+    transition: 0.5s ease;
+}
+footer .social {
+    padding-top: 20px;
+    text-align: center;
+}
+footer .social p {
+  font-size: 14px;
+}
+footer .icons a {
+    text-decoration: none;
+    padding: 10px;
+    color:var(--blue);
+}
+
+
+.login {
+  width: 400px;
+  margin: 65px auto;
+  font-size: 16px;
+}
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: var(--blue);
+}
+.login-header {
+  background-color: var(--blue);
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.login-container {
+  background-color: #fde8e8;
+  padding: 12px;
+}
+.login p {
+  padding: 12px;
+}
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+.login input[type="email"],
+.login input[type="password"] {
+  background-color: var(--white);
+  border-color: #bbb;
+  color: #555;
+}
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+.login input[type="submit"] {
+  background-color: var(--blue);
+  border-color: transparent;
+  color: var(--white);
+  cursor: pointer;
+}
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+.container {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  text-align:center;
+}
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px 3px;
+}
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+
+.registration-form {
+    margin-top: 0px;
+   padding-top: 120px;
+ }
+ .register-here{
+     width: 360px;
+     height: 830px;
+     margin: auto;
+     background-color: white;
+     border-radius: 3px;
+     box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+ }
+ .greet {
+     text-align: center;
+     padding-top: 15px;
+     color: var(--blue);
+ }
+.guide {
+     text-align: center;
+     margin-top: 1rem;
+ }
+ .register-form {
+     width: 300px;
+     margin-left: 20px;
+ }
+ form label {
+     display: flex;
+     margin-top: 20px;
+     font-size: 18px;
+ }
+ form input, select {
+     width: 100%;
+     padding: 7px;
+     border: none;
+     border: 1px solid gray;
+     border-radius: 6px;
+     outline: none;
+ }
+ .register {
+     width: 305px;
+     height: 35px;
+     margin-top: 20px;
+     border: none;
+     border-radius: 6px;
+     background-color: var(--blue);
+     color: white;
+     font-size: 18px;
+ }
+ .register:hover {
+     background-color: #1493a3;
+ }
+
+
+@media(max-width:991px){
+    header{
+        padding: 2rem;
+    }
+}
+@media (max-width:750px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > ul li a {
+      display: block;
+      width: 100%;
+    }
+      .nav > .nav-links > ul li{
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+        background-color: #333;
+
+      }
+      .nav > .nav-links > ul li a{
+          margin-left: 40%;
+      }
+      .nav .nav-links ul a.icon{
+        margin-left: 33%;
+      }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 90px);
+      overflow-y: auto;
+    }
+  }
